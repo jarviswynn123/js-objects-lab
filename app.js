@@ -57,10 +57,12 @@ Exercise 5
 
 Solve Exercise 5 here:
 */
-// for (let i = 0; i < pokemon.length; i++) {
-//   console.log(Math.floor(Math.random() * 150))
+for (let i = 0; i < pokemon.length; i++) {
+  if (pokemon[i].hp > 90) {
+    game.party.splice(0, 0, pokemon[i])
+  }
 
-// }
+}
 
 
 
